@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 
 df = pd.read_csv("Crop_Recommendation.csv")
 
-# Clean the data
+
 print("Rows before cleaning:", len(df))
 df = df.drop_duplicates()
 df = df.dropna()
@@ -36,4 +36,3 @@ plt.ylabel("Count")
 plt.savefig("ph_distribution.png")
 plt.close()
 
-print("Done! Check your folder for 3 PNG charts.")
